@@ -1,0 +1,37 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'app/css/registro.css' %}">
+
+
+<div class="registro">
+<h1 style="color: black;">Registro</h1>
+<form id="registerForm">
+  <div class="form-group">
+    <label for="username" style="color: black;">Nombre de usuario:</label>
+    <input type="text" id="username" name="username" required>
+  </div>
+  <div class="form-group">
+    <label for="email" style="color: black;">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label for="password" style="color: black;">Contraseña:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <div class="form-group">
+    <label for="confirmPassword" style="color: black;">Confirmar contraseña:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required>
+  </div>
+  <div class="form-group">
+    <button type="submit" style="background-color: #4caf50; color: white;">Registrarse</button>
+  </div>
+</form>
+</div>
+
+
+<script src="{% static 'app/js/Registro.js' %}"></script>
+
+{% endblock %}
+

@@ -1,0 +1,23 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'app/css/Contacto.css' %}">
+
+<br><br>
+
+<form action="" class="formulario_contacto" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form }}
+
+    <button type="submit" id="btnEnviar" class="button">Enviar</button>
+</form>
+{{ mensaje }}
+
+<table id="tablacontactos">
+
+</table>
+
+{% endblock %}

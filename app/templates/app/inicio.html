@@ -1,0 +1,29 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'app/css/inicio.css' %}">
+  
+<br>
+<div class="inicio">
+<form class ="inicio">
+  <h1 style="color: black;">Iniciar Sesión</h1>
+  <div class="form-group">
+    <label for="email" style="color: black;">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+  </div>
+  <div class="form-group">
+    <label for="password" style="color: black;">Contraseña:</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <button type="submit" id="submit-btn" >Iniciar Sesión</button>
+  <p style="color: black;">¿No tienes cuenta? Crea una en el siguiente link <a href="{% url 'registro' %}" target="_blank" title="Sitio web">Crear cuenta</a></p>
+</form>
+</div>
+</div>
+
+<script src="{% static 'app/js/inicio.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,55 @@
+/* AgregarProducto.css */
+
+.card {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  hr {
+
+    margin-bottom: 20px;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  .d-flex {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  input[type="reset"],
+  input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="reset"] {
+    background-color: #f2f2f2;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  .mensaje {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  

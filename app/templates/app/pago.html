@@ -1,0 +1,43 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+
+<link rel="stylesheet" href="{% static 'app/css/pago.css' %}">
+
+<div class="container">
+    <h1>Página de Pago</h1>
+    <form id="payment-form">
+      <div class="form-group">
+        <label for="card-type">Tipo de Tarjeta</label>
+        <select id="card-type">
+          <option value="visa">Visa</option>
+          <option value="mastercard">Mastercard</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="card-number">Número de Tarjeta</label>
+        <input type="text" id="card-number" required>
+      </div>
+      <div class="form-group">
+        <label for="card-expiration">Fecha de Vencimiento</label>
+        <input type="text" id="card-expiration" required>
+      </div>
+      <div class="form-group">
+        <label for="card-cvv">CVV</label>
+        <input type="text" id="card-cvv" required>
+      </div>
+      <div class="form-group">
+        <label for="payment-type">Tipo de Pago</label>
+        <select id="payment-type">
+          <option value="credit">Tarjeta de Crédito</option>
+          <option value="debit">Tarjeta de Débito</option>
+        </select>
+      </div>
+      <button type="submit">Pagar</button>
+    </form>
+    <p id="payment-result"></p>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'app/base.html' %}
+
+{% load static %}
+
+{% block contenido %}
+<link rel="stylesheet" href="{% static 'app/css/404.css' %}">
+
+<br>
+
+<h6>sección en mantenimiento </h6>
+<br>
+
+<button type="button"  onclick="location.href='{% url 'home' %}'">volver</button>
+
+{% endblock %}
